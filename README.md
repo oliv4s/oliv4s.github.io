@@ -1,17 +1,17 @@
-# Nacho Barrios · oliv4s — personal website (v8)
+# Nacho Barrios - oliv4s - personal website (v9)
 
-Source for [oliv4s.github.io](https://oliv4s.github.io/), a static English-language personal website with three pages: Home, CV, and Blog. Version 8 refines the light palette to olive, retains the dark background, adds social platform icons, illustrated company wordmarks on the interactive career path, and a sketch illustration in Always learning. The compact avatar, readable CV, and Notes & research are retained.
+Source for [oliv4s.github.io](https://oliv4s.github.io/), a static English-language personal website with three pages: Home, CV, and Blog. Version 9 includes a personalized avatar, a fast-to-scan career timeline, a continuous research/learning thread, and a card-based CV. The intro, "Always learning", and "Notes & research" are retained.
 
 ## Update the existing GitHub Pages site
 
 Use the existing public repository `oliv4s/oliv4s.github.io` — **do not create a new repository**.
 
-1. Extract the ZIP archive. Copy the **contents** into your local repository root, replacing files with the same names. Be sure to include the hidden `.github` folder, `assets/nacho-avatar.webp`, `assets/learning-sketch.webp`, and both `assets/logos/` and `assets/icons/`.
+1. Extract the ZIP archive. Copy the **contents** into your local repository root, replacing files with the same names. Be sure to include the hidden `.github` folder and `assets/nacho-avatar.webp`.
 2. If your checkout uses Git, from its root run:
 
    ```sh
    git add -A
-   git commit -m "Refine olive palette, social icons and journey logos"
+   git commit -m "Refresh avatar, journey and CV design"
    git push origin main
    ```
 
@@ -33,12 +33,20 @@ Open <http://localhost:8000/>.
 ## Edit content
 
 - `site.yml`: experience, education, certifications, training, skills, journey milestone labels and professional links.
-- `assets/nacho-avatar.webp`: the approved illustration used on the Home page.
-- `assets/learning-sketch.webp`: the custom illustrated thinking-at-the-computer doodle for the learning section.
-- `assets/logos/`: simplified local SVG wordmarks for the five career milestones (recognition marks, not official brand assets). Replace with approved company marks if desired.
-- `assets/icons/`: local vector icons for social links.
+- `assets/nacho-avatar.webp`: the approved illustration used on the Home page. If you replace it, keep the same path or update `templates/home.html`.
 - `templates/home.html`, `templates/cv.html`, `templates/blog.html`: page layouts.
 - `assets/styles.css`: appearance and mobile styles.
 - `content/posts/`: Markdown blog posts. The included example is **unpublished** (`published: false`); it is not generated as a public web page.
 
 **Privacy & disclosure:** Uploaded CV PDFs and the private phone number/email do not appear in this project. Never put unpublished vulnerability details, embargoed writeups, confidential company materials, or credentials in the public repository — the `published: false` flag hides a post from the generated site but does **not** make the source private on GitHub.
+
+
+## Version 9 updates
+
+- Evolve timeline node is solely about teaching, independent of vulnerability research.
+- NTT DATA logo on the Penetration Tester role; everis on the previous internship.
+- Employer marks refreshed using simplified locally drawn SVGs. These are not official corporate vector assets.
+- Certification cards have a consistent background and styling.
+- Avatar frame no longer repeats the site handle on both borders.
+- Visible middle-dot and long-dash punctuation normalized to standard hyphens.
+- Research and continuous learning is shown as an always-on thread throughout the journey, not as something that started at Evolve.

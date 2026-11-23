@@ -27,7 +27,7 @@
     <h3 class="cv-block-head">Certifications <span>{{ site.certifications|length }} credentials</span></h3>
     <div class="credential-grid-v6">
       {% for cert in site.certifications %}
-      <article class="credential-card-v6 {% if cert.featured %}credential-featured{% endif %}">
+      <article class="credential-card-v6">
         <div class="credential-top-v6"><span class="cert-mini-label">CERT / {{ '%02d' % loop.index }}</span><span class="credential-symbol" aria-hidden="true">↗</span></div>
         <h4>{{ cert.title }}</h4><p class="credential-issuer">{{ cert.issuer }}</p>
         {% if cert.credential_url %}<a href="{{ cert.credential_url }}" rel="noopener noreferrer" target="_blank">Verify credential ↗</a>{% endif %}

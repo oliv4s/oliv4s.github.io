@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" role="img" aria-label="NTT DATA">
+<rect width="240" height="70" rx="9" fill="#fff"/>
+<g fill="none" stroke="#0069b5" stroke-width="5.7" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M34 38c-15-5-18-13-12-19 10-10 25-4 28 5 4 12-14 32-28 22-6-4-6-11-2-18 4-8 12-13 22-13"/>
+</g>
+<text x="69" y="44" font-size="26" font-weight="800" font-family="Arial,Helvetica,sans-serif" letter-spacing="-1.15" fill="#0069b5">NTT DATA</text>
+</svg>

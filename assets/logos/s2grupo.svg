@@ -1,4 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" role="img" aria-label="S2 Grupo">
-<rect width="240" height="70" rx="9" fill="#fff"/><g stroke="#094ba9" stroke-width="3" fill="none" stroke-linejoin="round"><path d="M17 49 37 13 57 49Z"/><path d="M24 44 37 22 50 44Z"/><path d="M31 38 37 29 43 38Z"/></g>
-<text x="71" y="45" font-size="34" font-family="Arial,sans-serif" font-weight="800" letter-spacing="-1" fill="#064a9f">S2</text><text x="129" y="44" font-size="21" font-family="Arial,sans-serif" font-weight="700" letter-spacing=".2" fill="#064a9f">GRUPO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" role="img" aria-label="S2GRUPO">
+<rect width="240" height="70" rx="9" fill="#fff"/>
+<g fill="none" stroke="#0649ac" stroke-width="1.7" opacity=".96">
+ <path d="M12 36C25 10 46 11 64 32C75 46 63 59 48 59C33 59 28 50 26 39"/>
+ <path d="M17 37C30 16 44 16 59 32C67 42 58 54 47 54C36 54 32 48 32 40"/>
+ <path d="M22 38C34 23 44 23 54 34C59 41 54 49 46 49C39 49 36 44 36 40"/>
+ <path d="M26 38C36 28 43 29 49 36"/>
+</g>
+<text x="75" y="44" font-size="30" font-weight="800" font-family="Arial,Helvetica,sans-serif" letter-spacing="-1.45" fill="#0649ac">S2GRUPO</text>
 </svg>
