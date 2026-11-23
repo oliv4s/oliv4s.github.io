@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="{{ site.intro }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ site.intro }}">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f8faf6">
+  <link rel="canonical" href="{{ site.site_url }}{{ path }}">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <title>{{ page_title }}</title>
+  <script>try{const t=localStorage.getItem('nb-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site-shell">
+<header class="topbar container">
+  <a class="brand" href="/" aria-label="Nacho Barrios home"><span class="brand-signal"></span><span class="brand-title">oliv4s<span>_</span></span><span class="brand-caption">NACHO BARRIOS</span></a>
+  <nav class="mainnav" aria-label="Main navigation">
+    {% for label, href in [('Home','/'),('CV','/cv/'),('Blog','/blog/')] %}<a class="{% if active == label %}nav-active{% endif %}" {% if active == label %}aria-current="page"{% endif %} href="{{ href }}">{{ label }}</a>{% endfor %}
+  </nav>
+  <button class="theme-switch" type="button" aria-label="Switch between light and dark mode" aria-pressed="false" title="Toggle color mode"><span class="sun" aria-hidden="true">☼</span><span class="moon" aria-hidden="true">☾</span></button>
+</header>
+<main id="main">{% block body %}{% endblock %}</main>
+<footer class="footer">
+ <div class="container footer-inner"><div><span class="foot-brand">oliv4s<span>_</span></span><p>Offensive security · Independent personal site.</p></div><div class="footer-links">{% for s in site.socials %}<a href="{{ s.url }}" target="_blank" rel="noopener noreferrer">{{ s.label }} ↗</a>{% endfor %}</div></div>
+ <div class="container footer-bottom"><span>© {{ year }} Nacho Barrios</span><span>Hosted with GitHub Pages</span></div>
+</footer>
+</div>
+<script defer src="/assets/site.js"></script>
+</body>
+</html>

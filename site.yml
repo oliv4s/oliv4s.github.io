@@ -1,0 +1,151 @@
+# Public website content. All experience, certifications and training below come from the supplied CV and LinkedIn export.
+# Credential dates and verification URLs are deliberately omitted until independently supplied.
+# No phone, personal email, PDF attachments or confidential research included.
+name: Nacho Barrios
+handle: oliv4s
+headline: Offensive Security Engineer · Red Team · Vulnerability Research
+site_url: https://oliv4s.github.io
+location: Spain
+intro: Offensive Security Engineer with nearly 10 years of experience across red teaming, penetration testing and adversary
+  emulation. I investigate security weaknesses in complex systems, applications and infrastructure.
+about: I am Nacho Barrios (oliv4s), an offensive security engineer on the Siemens Red Team. My background spans red and purple
+  team engagements, internal and external penetration testing, OT assessments, web and mobile security, and the development
+  of tooling for offensive assessments. I also teach cybersecurity and enjoy research-driven, hands-on learning.
+cv_intro: Nearly a decade of hands-on offensive security, from penetration testing and adversary emulation to vulnerability
+  research, offensive tooling and knowledge sharing.
+focus:
+- title: Red Team & Adversary Emulation
+  description: Red and purple team engagements, attack-path analysis, internal and external assessments, and work across enterprise
+    and OT environments.
+- title: Application & Vulnerability Security
+  description: Web and mobile application assessments, source code analysis and vulnerability research, with an emphasis on
+    clear technical findings.
+- title: Offensive Tooling & Training
+  description: Research into red team infrastructure, advanced offensive techniques and malware development; practical technical
+    teaching and labs.
+skills:
+- group: Offensive assessment
+  items:
+  - Red teaming
+  - Adversary emulation
+  - Penetration testing
+  - Active Directory
+  - OT security
+  - Purple teaming
+  - Social engineering simulations
+- group: Application & infrastructure
+  items:
+  - Web security
+  - Mobile application security
+  - Source code review
+  - Wi-Fi security
+  - Cloud security
+  - Vulnerability research
+- group: Tools & development
+  items:
+  - Red team infrastructure
+  - Offensive tool development
+  - Malware research
+  - Python
+  - Bash
+  - PowerShell
+  - Windows
+  - Linux
+experience:
+- role: Red Team Professional
+  company: Siemens
+  location: Madrid, Spain
+  dates: Sep 2022 – Present
+  summary: Red team, purple team and technical offensive-security engagements involving enterprise environments and industrial
+    operational technology.
+  highlights:
+  - Red and purple team assessments for internal and external stakeholders, including M&A contexts.
+  - OT security assessments and targeted testing.
+  - Research on offensive techniques, red team infrastructure and malware development.
+- role: Cybersecurity & AI Master’s Instructor
+  company: Evolve
+  location: Remote / Madrid, Spain
+  dates: Oct 2026 – Present
+  summary: Teaching hands-on cybersecurity modules in the Cybersecurity & AI master’s programme.
+  highlights:
+  - Practical demonstrations and applied cybersecurity training.
+- role: Red Team Consultant · Penetration Tester
+  company: S2 Grupo
+  location: Madrid, Spain
+  dates: Jun 2020 – Sep 2022
+  summary: Offensive security assessments and red team engagements across infrastructure, applications and people-focused
+    attack surfaces.
+  highlights:
+  - Red team operations and tooling development; internal and external penetration testing.
+  - Web and mobile application assessments and authorized social engineering simulations.
+  - Research and training related to offensive security.
+- role: Penetration Tester
+  company: everis / NTT DATA
+  location: Madrid, Spain
+  dates: Sep 2017 – Jun 2020
+  summary: Ethical hacking and penetration testing projects for applications, infrastructure and wireless networks.
+  highlights:
+  - Web, infrastructure, mobile and Wi-Fi security audits.
+  - Vulnerability testing and hardening recommendations.
+- role: Cybersecurity Intern
+  company: everis
+  location: Madrid, Spain
+  dates: Sep 2016 – Aug 2017
+  summary: Initial professional experience in information security and penetration testing.
+  highlights: []
+certifications:
+- title: OSCP
+  issuer: OffSec · Offensive Security Certified Professional
+  featured: true
+- title: BSCP
+  issuer: PortSwigger · Burp Suite Certified Practitioner
+  featured: true
+- title: CRTL
+  issuer: Zero-Point Security · Certified Red Team Lead
+  featured: true
+- title: CRTO
+  issuer: Zero-Point Security · Certified Red Team Operator
+  featured: true
+- title: OSWP
+  issuer: OffSec · Offensive Security Wireless Professional
+- title: CHMRTS
+  issuer: CyberWarFare Labs · Certified Hybrid Multi-Cloud Red Team Specialist
+  featured: true
+- title: MCRTA
+  issuer: CyberWarFare Labs · Multi-Cloud Red Teaming Analysis
+- title: CEH v10
+  issuer: EC-Council · Certified Ethical Hacker
+- title: AZ-900
+  issuer: Microsoft · Azure Fundamentals
+- title: Certified Purple Teaming Fundamentals
+  issuer: Purple teaming fundamentals certificate
+education:
+- title: Telecommunications Engineering
+  institution: Universidad Politécnica de Madrid (ETSIT-UPM)
+  dates: 2012 – 2017
+socials:
+- label: GitHub
+  url: https://github.com/oliv4s
+- label: LinkedIn
+  url: https://www.linkedin.com/in/ignaciobp/
+- label: Hack The Box
+  url: https://profile.hackthebox.com/profile/01a1d67e-0f5d-7075-bb81-8b22463647eb
+- label: HackerOne
+  url: https://hackerone.com/oliv4s
+- label: YesWeHack
+  url: https://yeswehack.com/hunters/oliv4s
+external_highlight:
+  label: Hack The Box
+  detail: Pro Hacker badge
+  url: https://profile.hackthebox.com/profile/01a1d67e-0f5d-7075-bb81-8b22463647eb
+training:
+- title: Malware Development — Advanced Vol. 1
+  provider: Sektor7
+- title: Malware Development — Intermediate
+  provider: Sektor7
+- title: Malware Development — Essentials
+  provider: Sektor7
+- title: C# for n00bs
+  provider: Zero-Point Security
+- title: SUMMUS, MAILSERVICE, CUBUS and AVUESSO labs
+  provider: Extreme Red Team Laboratories

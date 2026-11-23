@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="container subpage-title"><p class="section-kicker">PROFESSIONAL PROFILE / OLIV4S</p><h1>Experience &<br><em>expertise.</em></h1><p class="page-subtitle">{{ site.cv_intro }}</p></section>
+<section class="container cv-layout">
+ <aside class="cv-aside"><div class="aside-sticky"><span class="aside-label">NACHO BARRIOS</span><h2>Offensive Security<br>Red Team</h2><span class="small-label">BASED IN {{ site.location|upper }}</span><a href="{{ site.socials[1].url }}" target="_blank" rel="noopener noreferrer" class="aside-link">LinkedIn profile ↗</a><a href="{{ site.socials[2].url }}" target="_blank" rel="noopener noreferrer" class="aside-link">Hack The Box profile ↗</a></div></aside>
+ <div class="cv-main">
+  <section class="cv-section"><div class="cv-label">01 / SUMMARY</div><h2>Professional summary</h2><p class="cv-body">{{ site.about }}</p></section>
+  {% if site.experience %}
+  <section class="cv-section"><div class="cv-label">02 / EXPERIENCE</div><h2>Professional experience</h2>
+    {% for job in site.experience %}<article class="cv-entry cv-job"><div><h3>{{ job.role }}</h3><strong>{{ job.company }}</strong>{% if job.location %}<p class="cv-entry-location">{{ job.location }}</p>{% endif %}</div><span>{{ job.dates }}</span>{% if job.summary %}<p>{{ job.summary }}</p>{% endif %}{% if job.highlights %}<ul class="cv-highlights">{% for point in job.highlights %}<li>{{ point }}</li>{% endfor %}</ul>{% endif %}</article>{% endfor %}
+  </section>{% endif %}
+  {% if site.certifications %}
+  <section class="cv-section" id="certifications"><div class="cv-label">03 / CERTIFICATIONS</div><h2>Certifications & credentials</h2><div class="cert-grid">
+  {% for cert in site.certifications %}<article class="cert-card"><span class="cert-indicator" aria-hidden="true">✓</span><div class="cert-body"><h3>{{ cert.title }}</h3><p>{{ cert.issuer }}{% if cert.date %} · {{ cert.date }}{% endif %}</p>{% if cert.credential_url %}<a href="{{ cert.credential_url }}" target="_blank" rel="noopener noreferrer" aria-label="Verify {{ cert.title }} credential">Verify credential ↗</a>{% endif %}</div></article>{% endfor %}</div>
+  </section>{% endif %}
+  {% if site.education %}<section class="cv-section"><div class="cv-label">04 / EDUCATION</div><h2>Education</h2>{% for ed in site.education %}<article class="cv-entry"><div><h3>{{ ed.title }}</h3><strong>{{ ed.institution }}</strong></div>{% if ed.dates %}<span>{{ ed.dates }}</span>{% endif %}</article>{% endfor %}</section>{% endif %}
+  <section class="cv-section"><div class="cv-label">05 / CAPABILITIES</div><h2>Technical focus</h2>{% for item in site.focus %}<div class="capability-row"><div><span class="item-number">0{{ loop.index }}</span><h3>{{ item.title }}</h3></div><p>{{ item.description }}</p></div>{% endfor %}</section>
+  <section class="cv-section"><div class="cv-label">06 / TECHNICAL TOOLKIT</div><h2>Skills & environments</h2>{% for group in site.skills %}<div class="skill-group"><h3>{{ group.group }}</h3><div class="tag-grid">{% for skill in group['items'] %}<span class="skill-tag">{{ skill }}</span>{% endfor %}</div></div>{% endfor %}</section>
+  {% if site.training %}<section class="cv-section"><div class="cv-label">07 / COURSES & LABS</div><h2>Additional training</h2><div class="training-list">{% for t in site.training %}<div class="training-item"><strong>{{ t.title }}</strong><span>{{ t.provider }}</span></div>{% endfor %}</div></section>{% endif %}
+  <section class="cv-section"><div class="cv-label">PUBLIC PROFILES</div><h2>Beyond the CV</h2><p class="cv-body">Follow my public work and training activity on these platforms.</p><div class="profile-links">{% for s in site.socials %}<a href="{{ s.url }}" target="_blank" rel="noopener noreferrer">{{ s.label }} <span>↗</span></a>{% endfor %}</div></section>
+ </div>
+</section>
+{% endblock %}

@@ -1,0 +1,4 @@
+{% extends 'base.html' %}
+{% block body %}
+<article class="container article"><a class="back-link" href="/blog/">← All articles</a><div class="article-meta">{{ post.category }} <span>·</span> {{ post.date }}</div><h1>{{ post.title }}</h1>{% if post.summary %}<p class="article-summary">{{ post.summary }}</p>{% endif %}<div class="article-rule"></div><div class="prose">{{ post.html|safe }}</div><div class="article-outro"><span>OLIV4S / PUBLIC RESEARCH</span><a href="/blog/">Back to blog ↗</a></div></article>
+{% endblock %}
