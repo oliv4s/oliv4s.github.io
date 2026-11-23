@@ -28,3 +28,42 @@
 .cv-section[id]{scroll-margin-top:30px}
 @media(max-width:1000px){.credential-strip{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:740px){.credential-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.featured-certifications{padding-top:40px;padding-bottom:65px}.training-item{align-items:flex-start;flex-direction:column;gap:4px}.training-item span{text-align:left}}
+
+/* v5: a quieter introduction and a narrative career journey */
+.hero-v5{padding-block:92px 100px;grid-template-columns:minmax(0,1.3fr) minmax(290px,.72fr);gap:68px}
+.hero-v5 h1{font-size:clamp(61px,6.5vw,94px);margin-bottom:18px;max-width:760px;white-space:nowrap}
+.hero-role{font-size:clamp(18px,1.9vw,23px);letter-spacing:-.025em;font-weight:690;margin:0 0 21px}
+.hero-role span{color:#87ad59;padding:0 5px}
+.hero-v5 .hero-lede{max-width:580px}
+.journey-section{padding-top:100px;padding-bottom:105px}
+.journey-heading{margin-bottom:47px}
+.journey-list{border-top:1px solid var(--line);position:relative}
+.journey-item{display:grid;grid-template-columns:235px minmax(0,1fr);gap:70px;border-bottom:1px solid var(--line);padding:33px 0 34px;position:relative}
+.journey-when{display:flex;flex-direction:column;align-items:start;gap:8px;padding-top:6px;position:relative;padding-left:28px}
+.journey-dot{position:absolute;left:0;top:12px;border:3px solid var(--bg);box-shadow:0 0 0 1px #93b772;background:var(--lime);width:13px;height:13px;border-radius:50%}
+.journey-when:before{position:absolute;content:'';width:1px;left:6px;top:27px;bottom:-36px;background:var(--line)}
+.journey-item:last-child .journey-when:before{display:none}
+.journey-date{font-size:17px;font-weight:790;letter-spacing:-.025em}
+.journey-kind{font-size:10px;letter-spacing:.13em;font-weight:790;color:var(--muted)}
+.journey-story h3{font-size:clamp(22px,2.35vw,30px);letter-spacing:-.04em;margin:0 0 12px}
+.journey-story p{color:var(--muted);font-size:15px;line-height:1.78;max-width:670px;margin:0 0 15px}
+.journey-place{font-size:12px;font-weight:770;letter-spacing:.02em}
+.credentials-band{background:var(--soft);padding:75px 0 83px}
+.credentials-layout{display:grid;grid-template-columns:1fr 1.03fr;gap:70px;align-items:center}
+.credentials-layout h2{font-size:clamp(36px,4.2vw,53px);letter-spacing:-.055em;line-height:1.12;margin:0 0 18px}
+.credentials-layout h2 em{font-family:var(--serif);font-weight:400}
+.credentials-layout p:not(.section-kicker){font-size:14px;color:var(--muted);line-height:1.7;max-width:410px;margin-bottom:19px}
+.credential-shortlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.credential-short{background:var(--paper);border:1px solid var(--line);padding:20px;min-height:102px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;border-radius:8px}
+.credential-short strong{font-size:26px;letter-spacing:-.055em;line-height:1}
+.credential-short span{font-size:12px;color:var(--muted)}
+.cv-page-title{padding-bottom:47px}
+.cv-page-title h1{margin:0}
+.cv-subhead{font-size:18px;letter-spacing:-.025em;font-weight:750;margin:3px 0 18px}
+.training-title{margin-top:37px}
+.skills-layout{display:grid;grid-template-columns:1fr;gap:4px}
+.skills-layout .skill-group{padding-top:22px;margin-top:10px}
+.skills-layout .skill-group:first-child{margin-top:0}
+@media(max-width:1050px){.hero-v5{gap:35px}.hero-v5 h1{font-size:clamp(54px,6vw,78px)}.journey-item{gap:35px;grid-template-columns:195px 1fr}}
+@media(max-width:740px){.hero-v5{grid-template-columns:1fr;gap:44px;padding-block:59px 72px}.hero-v5 h1{font-size:clamp(50px,11vw,68px);white-space:normal}.hero-role{font-size:18px}.journey-section{padding-block:68px}.journey-heading{margin-bottom:28px}.journey-item{grid-template-columns:1fr;gap:12px;padding:24px 0 27px}.journey-when{padding:0 0 0 23px;flex-direction:row;align-items:center;gap:12px}.journey-dot{top:6px}.journey-when:before{display:none}.journey-date{font-size:14px}.journey-kind{font-size:9px}.journey-story{padding-left:23px}.journey-story h3{font-size:24px}.journey-story p{font-size:14px}.credentials-band{padding:65px 0}.credentials-layout{grid-template-columns:1fr;gap:30px}.credential-short{min-height:95px}.cv-page-title h1{font-size:clamp(46px,10vw,69px)}}
+@media(max-width:375px){.credential-shortlist{grid-template-columns:1fr}}

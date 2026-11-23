@@ -1,28 +1,12 @@
-# Public website content. All experience, certifications and training below come from the supplied CV and LinkedIn export.
-# Credential dates and verification URLs are deliberately omitted until independently supplied.
-# No phone, personal email, PDF attachments or confidential research included.
+# Public content. Roles, education and credentials from the supplied CVs.
+# No phone, private email or unpublished findings should be stored here.
 name: Nacho Barrios
 handle: oliv4s
 headline: Offensive Security Engineer · Red Team · Vulnerability Research
 site_url: https://oliv4s.github.io
 location: Spain
-intro: Offensive Security Engineer with nearly 10 years of experience across red teaming, penetration testing and adversary
-  emulation. I investigate security weaknesses in complex systems, applications and infrastructure.
-about: I am Nacho Barrios (oliv4s), an offensive security engineer on the Siemens Red Team. My background spans red and purple
-  team engagements, internal and external penetration testing, OT assessments, web and mobile security, and the development
-  of tooling for offensive assessments. I also teach cybersecurity and enjoy research-driven, hands-on learning.
-cv_intro: Nearly a decade of hands-on offensive security, from penetration testing and adversary emulation to vulnerability
-  research, offensive tooling and knowledge sharing.
-focus:
-- title: Red Team & Adversary Emulation
-  description: Red and purple team engagements, attack-path analysis, internal and external assessments, and work across enterprise
-    and OT environments.
-- title: Application & Vulnerability Security
-  description: Web and mobile application assessments, source code analysis and vulnerability research, with an emphasis on
-    clear technical findings.
-- title: Offensive Tooling & Training
-  description: Research into red team infrastructure, advanced offensive techniques and malware development; practical technical
-    teaching and labs.
+intro: I work in offensive security, exploring how systems can fail and what we can learn from them. Red teaming, hands-on
+  research and sharing knowledge are at the heart of what I do.
 skills:
 - group: Offensive assessment
   items:
@@ -134,10 +118,6 @@ socials:
   url: https://hackerone.com/oliv4s
 - label: YesWeHack
   url: https://yeswehack.com/hunters/oliv4s
-external_highlight:
-  label: Hack The Box
-  detail: Pro Hacker badge
-  url: https://profile.hackthebox.com/profile/01a1d67e-0f5d-7075-bb81-8b22463647eb
 training:
 - title: Malware Development — Advanced Vol. 1
   provider: Sektor7
@@ -149,3 +129,34 @@ training:
   provider: Zero-Point Security
 - title: SUMMUS, MAILSERVICE, CUBUS and AVUESSO labs
   provider: Extreme Red Team Laboratories
+journey:
+- dates: 2012–2017
+  title: Building an engineering foundation
+  place: ETSIT · Universidad Politécnica de Madrid
+  description: I studied Telecommunications Engineering at UPM. That engineering background has shaped the way I approach
+    systems, networks and security ever since.
+  tag: EDUCATION
+- dates: 2016–2020
+  title: My first steps in cybersecurity
+  place: everis · now part of NTT DATA
+  description: I started as an intern and later became a penetration tester, working on applications, infrastructure,
+    mobile and wireless security.
+  tag: FIRST ROLE
+- dates: 2020–2022
+  title: Moving deeper into offensive security
+  place: S2 Grupo
+  description: At S2 Grupo I moved further into red team engagements, offensive tooling and internal and external security
+    assessments.
+  tag: RED TEAM
+- dates: 2022–Present
+  title: Red teaming complex environments
+  place: Siemens
+  description: I joined the Siemens Red Team, working on adversary-focused assessments and research across enterprise
+    and operational technology environments.
+  tag: TODAY
+- dates: 2026–Present
+  title: Sharing knowledge and exploring research
+  place: Evolve · Personal research
+  description: Alongside my Red Team work, I started teaching hands-on cybersecurity at Evolve and spending more time
+    on vulnerability research. Public writeups will follow responsible disclosure.
+  tag: ALONGSIDE
