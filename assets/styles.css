@@ -484,3 +484,15 @@
 .thread-status{font:750 10px/1 ui-monospace,SFMono-Regular,Consolas,monospace;color:#b0c484;letter-spacing:.12em;border:1px solid #52694c;border-radius:999px;padding:9px 12px}
 @media(max-width:780px){.journey-throughline{gap:11px;padding:15px}.thread-pulse{max-width:85px;min-width:38px}}
 @media(max-width:530px){.thread-icon{width:35px;height:35px}.thread-icon svg{width:23px;height:23px}.thread-label{font-size:8px;letter-spacing:.045em}.thread-copy strong{font-size:13px}.thread-pulse{display:none}.thread-status{font-size:8px;padding:7px 8px;margin-left:auto}}
+
+/* v10: consistent certifications; company marks use official hosted images when available. */
+.credential-featured, .credential-card-v6{background:#fff!important;border:1px solid #d6dfd5!important;color:#173230!important}
+.credential-card-v6:before{background:#899e65!important}
+.credential-card-v6:hover{border-color:#899e65!important}
+:root[data-theme="dark"] .credential-featured,
+:root[data-theme="dark"] .credential-card-v6{background:#132b2d!important;border-color:#365052!important;color:#e5efe9!important}
+:root[data-theme="dark"] .credential-card-v6:hover{border-color:#899e65!important}
+.avatar-topline span:nth-child(2){font-weight:800;color:#c3d6a3;letter-spacing:.1em}
+.brand-img{display:block;width:100%;max-width:100%;max-height:43px;object-fit:contain}
+.journey-logo-tile img.brand-img{max-height:36px;width:100%;max-width:140px}
+.company-logo img.brand-img{max-height:43px}

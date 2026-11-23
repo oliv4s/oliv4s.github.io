@@ -11,7 +11,7 @@
   </div>
   <div class="hero-visual">
     <div class="avatar-module">
-      <div class="avatar-topline"><span class="avatar-led" aria-hidden="true"></span><span>PORTRAIT / 01</span><span class="avatar-tech-marks" aria-hidden="true">[ + ]</span></div>
+      <div class="avatar-topline"><span class="avatar-led" aria-hidden="true"></span><span>OLIV4S</span><span class="avatar-tech-marks" aria-hidden="true">[ + ]</span></div>
       <div class="avatar-art"><img class="hero-avatar" src="/assets/nacho-avatar.webp?v={{ asset_version }}" width="1050" height="1040" alt="Vector illustration of Nacho Barrios" fetchpriority="high"></div>
       <div class="avatar-bottomline"><span class="avatar-handle">OFFENSIVE SECURITY</span><span class="avatar-crosshair" aria-hidden="true">⊕</span></div>
     </div>
@@ -46,7 +46,7 @@
             </span>
             <span class="node-number">0{{ loop.index }} <span>// {{ item.tag }}</span></span>
             <span class="node-title">{{ item.short_title }}</span>
-            <span class="node-company"><span class="journey-logo-tile"><img src="/assets/logos/{{ item.logo }}.svg" alt="{{ item.short_place }}" loading="lazy" width="125" height="38"></span></span>
+            <span class="node-company"><span class="journey-logo-tile"><img src="{{ site.logo_urls.get(item.logo, '/assets/logos/' + item.logo + '.svg') }}" data-fallback="/assets/logos/{{ item.logo }}.svg" class="brand-img" alt="{{ item.short_place }}" loading="lazy" width="125" height="38"></span></span>
           </button>
           {% endfor %}
         </div>

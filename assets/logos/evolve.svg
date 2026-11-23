@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" role="img" aria-label="Evolve">
-<rect width="240" height="70" rx="9" fill="#fff"/>
-<g transform="translate(17 16)" fill="none" stroke="#314d59" stroke-width="3.8" stroke-linejoin="round" stroke-linecap="round">
- <path d="M20 0 40 18 20 36 0 18Z"/>
- <path d="m8 18 12-10 12 10M8 18l12 10 12-10"/>
+<rect width="240" height="70" rx="8" fill="#fff"/>
+<g fill="#151719">
+<path d="M27 40C17 29 16 23 23 12C34 25 41 33 36 41C34 45 30 44 27 40Z"/>
+<path d="M14 47C8 40 11 34 16 28C22 36 24 41 21 46C19 49 16 49 14 47Z"/>
 </g>
-<text x="74" y="45" font-size="33" font-weight="800" letter-spacing="-1.5" font-family="Arial,Helvetica,sans-serif" fill="#314d59">evolve</text>
+<text x="51" y="47" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="800" letter-spacing="-2.5" fill="#151719">evolve</text>
 </svg>

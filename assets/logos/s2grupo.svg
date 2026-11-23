@@ -1,10 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" role="img" aria-label="S2GRUPO">
-<rect width="240" height="70" rx="9" fill="#fff"/>
-<g fill="none" stroke="#0649ac" stroke-width="1.7" opacity=".96">
- <path d="M12 36C25 10 46 11 64 32C75 46 63 59 48 59C33 59 28 50 26 39"/>
- <path d="M17 37C30 16 44 16 59 32C67 42 58 54 47 54C36 54 32 48 32 40"/>
- <path d="M22 38C34 23 44 23 54 34C59 41 54 49 46 49C39 49 36 44 36 40"/>
- <path d="M26 38C36 28 43 29 49 36"/>
-</g>
-<text x="75" y="44" font-size="30" font-weight="800" font-family="Arial,Helvetica,sans-serif" letter-spacing="-1.45" fill="#0649ac">S2GRUPO</text>
+<rect width="240" height="70" rx="8" fill="#fff"/>
+<path fill="#0545B0" d="M14 13C30 4 50 12 56 28C61 44 49 57 29 59C13 59 6 44 9 30C10 23 11 17 14 13Z"/>
+<path d="M19 29C25 22 39 25 40 30C41 33 36 35 28 35C22 36 19 40 25 42C29 44 38 40 42 37" stroke="#fff" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+<text x="62" y="45" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="800" letter-spacing="-1.6" fill="#0545B0">S2GRUPO</text>
 </svg>

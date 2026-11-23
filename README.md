@@ -1,6 +1,6 @@
-# Nacho Barrios - oliv4s - personal website (v9)
+# Nacho Barrios - oliv4s - personal website (v10)
 
-Source for [oliv4s.github.io](https://oliv4s.github.io/), a static English-language personal website with three pages: Home, CV, and Blog. Version 9 includes a personalized avatar, a fast-to-scan career timeline, a continuous research/learning thread, and a card-based CV. The intro, "Always learning", and "Notes & research" are retained.
+Source for [oliv4s.github.io](https://oliv4s.github.io/), a static English-language personal website with three pages: Home, CV, and Blog. Version 10 includes a personalized avatar, a fast-to-scan career timeline, a continuous research/learning thread, and a card-based CV. The intro, "Always learning", and "Notes & research" are retained.
 
 ## Update the existing GitHub Pages site
 
@@ -11,7 +11,7 @@ Use the existing public repository `oliv4s/oliv4s.github.io` — **do not create
 
    ```sh
    git add -A
-   git commit -m "Refresh avatar, journey and CV design"
+   git commit -m "Fix company logos, uniform certifications and portrait label"
    git push origin main
    ```
 
@@ -50,3 +50,13 @@ Open <http://localhost:8000/>.
 - Avatar frame no longer repeats the site handle on both borders.
 - Visible middle-dot and long-dash punctuation normalized to standard hyphens.
 - Research and continuous learning is shown as an always-on thread throughout the journey, not as something that started at Evolve.
+
+
+## Brand assets (v10)
+
+- S2GRUPO: official blue corporate logo hosted by `s2grupo.es`, following the 2024 rebrand.
+- NTT DATA: global blue logo from Wikimedia Commons (attributed to NTT DATA).
+- Evolve: simple black leaf wordmark treatment based on its own learning platform, **not an original brand file**; replace `assets/logos/evolve.svg` with an official asset if Evolve provides one.
+- The source includes local fallback graphics so logos do not disappear when a hosted image is unavailable.
+- Certification cards intentionally use one consistent background, regardless of `featured` (which only controls the four shown on the homepage).
+- The portrait module has one `OLIV4S` heading and a separate `OFFENSIVE SECURITY` descriptor, no `PORTRAIT` label.

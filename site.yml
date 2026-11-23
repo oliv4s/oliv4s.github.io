@@ -3,8 +3,8 @@ handle: oliv4s
 headline: Offensive Security Engineer - Red Team - Vulnerability Research
 site_url: https://oliv4s.github.io
 location: Spain
-intro: I work in offensive security, exploring how systems can fail and what we can learn from them. Red teaming,
-  hands-on research and sharing knowledge are at the heart of what I do.
+intro: I work in offensive security, exploring how systems can fail and what we can learn from them. Red
+  teaming, hands-on research and sharing knowledge are at the heart of what I do.
 skills:
 - group: Offensive assessment
   items:
@@ -167,8 +167,8 @@ journey:
 - dates: 2020-2022
   title: Moving deeper into offensive security
   place: S2 Grupo
-  description: At S2 Grupo I moved further into red team engagements, offensive tooling and internal and external
-    security assessments.
+  description: At S2 Grupo I moved further into red team engagements, offensive tooling and internal and
+    external security assessments.
   tag: RED TEAM
   short_dates: 2020-22
   short_title: Red Team focus
@@ -177,8 +177,8 @@ journey:
 - dates: 2022-Present
   title: Red teaming complex environments
   place: Siemens
-  description: I joined the Siemens Red Team, working on adversary-focused assessments across enterprise and
-    operational technology environments.
+  description: I joined the Siemens Red Team, working on adversary-focused assessments across enterprise
+    and operational technology environments.
   tag: TODAY
   short_dates: 2022-NOW
   short_title: Red Team at Siemens
@@ -187,10 +187,12 @@ journey:
 - dates: 2026-Present
   title: Teaching cybersecurity
   place: Evolve
-  description: Alongside my Red Team work, I teach hands-on cybersecurity classes at Evolve, helping students
-    learn through practical exercises and real-world examples.
+  description: Alongside my Red Team work, I teach practical cybersecurity classes at Evolve.
   tag: TEACHING
   short_dates: 2026-NOW
   short_title: Teaching cybersecurity
   short_place: Evolve
   logo: evolve
+logo_urls:
+  s2grupo: https://s2grupo.es/wp-content/uploads/2024/11/S2GRUPO-AZUL_400.webp
+  ntt-data: https://upload.wikimedia.org/wikipedia/commons/6/67/Logo_Global_NTT_DATA_Future_Blue_RGB.png

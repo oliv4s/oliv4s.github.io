@@ -35,3 +35,15 @@
    });
  });
 })();
+
+// Use local wordmarks if a remote official asset is unreachable.
+document.querySelectorAll('img.brand-img[data-fallback]').forEach((img)=>{
+  img.addEventListener('error',()=>{
+    const fallback=img.dataset.fallback;
+    if(fallback && img.getAttribute('src')!==fallback){img.src=fallback;}
+  });
+  if (img.complete && img.naturalWidth === 0) {
+    const fallback=img.dataset.fallback;
+    if(fallback && img.getAttribute('src')!==fallback) img.src=fallback;
+  }
+});
