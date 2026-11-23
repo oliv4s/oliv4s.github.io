@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" role="img" aria-label="ETSIT UPM">
+ <rect width="240" height="70" rx="9" fill="#ffffff"/>
+ <g transform="translate(8 6)" stroke="#244876" stroke-width="1.6" fill="none"><path d="M18 9 9 19h18Z M18 9v35 M9 23h18 M12 28l6-12 6 12 M7 45h22"/><path d="M17 0h2v8 M11 7h14"/></g>
+ <text x="49" y="46" font-size="29" font-family="Arial,sans-serif" font-weight="700" letter-spacing="-2" fill="#E79515">ETSIT</text><text x="139" y="46" font-family="Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="-1" fill="#214978">UPM</text>
+</svg>

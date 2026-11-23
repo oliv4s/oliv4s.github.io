@@ -13,7 +13,7 @@
     <div class="work-grid">
       {% for job in site.experience %}
       <article class="work-card {% if loop.first %}work-primary{% endif %}">
-        <div class="work-top"><span class="company-mark" aria-hidden="true">{{ job.mark }}</span><time>{{ job.dates }}</time></div>
+        <div class="work-top"><span class="company-mark company-logo"><img src="/assets/logos/{{ job.logo }}.svg" alt="{{ job.company }}" loading="lazy" width="130" height="42"></span><time>{{ job.dates }}</time></div>
         <div class="work-info"><span class="work-company">{{ job.company }}</span><h3>{{ job.role }}</h3><p>{{ job.summary }}</p></div>
         {% if job.highlights %}<details class="work-details"><summary><span>Selected work</span><span class="expand-glyph" aria-hidden="true">+</span></summary><ul>{% for point in job.highlights %}<li>{{ point }}</li>{% endfor %}</ul></details>{% else %}<div class="work-details work-details-none"><span>Career starting point</span></div>{% endif %}
       </article>

@@ -8,3 +8,30 @@
   if(media.addEventListener)media.addEventListener('change',update);
   update();
 })();
+
+(function(){
+ const stages=[...document.querySelectorAll('.journey-node')];
+ if(!stages.length)return;
+ const number=document.getElementById('journey-active-index');
+ const years=document.getElementById('journey-active-years');
+ const title=document.getElementById('journey-active-title');
+ const description=document.getElementById('journey-active-description');
+ function choose(stage){
+   stages.forEach(node=>{const active=node===stage;node.classList.toggle('is-active',active);node.setAttribute('aria-pressed',String(active));});
+   number.innerHTML='';
+   number.appendChild(document.createTextNode(stage.dataset.index));
+   const suffix=document.createElement('span');suffix.textContent=' / 05';number.append(suffix);
+   years.textContent=stage.dataset.years+' / '+stage.dataset.company;
+   title.textContent=stage.dataset.title;
+   description.textContent=stage.dataset.description;
+ }
+ if(window.matchMedia('(max-width: 780px)').matches) choose(stages[0]);
+ stages.forEach((stage,i)=>{
+   stage.addEventListener('click',()=>choose(stage));
+   stage.addEventListener('keydown',(e)=>{
+     let next=e.key==='ArrowRight'||e.key==='ArrowDown'?i+1:e.key==='ArrowLeft'||e.key==='ArrowUp'?i-1:null;
+     if(next===null)return;
+     e.preventDefault();const target=stages[(next+stages.length)%stages.length];choose(target);target.focus();
+   });
+ });
+})();

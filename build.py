@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import datetime as dt
 import html
+import hashlib
 import re
 import shutil
 from pathlib import Path
@@ -64,7 +65,7 @@ def render(path, template, **kwargs):
     else:
         page = OUT / path.lstrip("/") / "index.html"
     page.parent.mkdir(parents=True, exist_ok=True)
-    result = ENV.get_template(template).render(site=SITE, year=YEAR, path=path, **kwargs)
+    result = ENV.get_template(template).render(site=SITE, year=YEAR, path=path, asset_version=hashlib.sha256((ROOT / "assets/styles.css").read_bytes() + (ROOT / "assets/site.js").read_bytes()).hexdigest()[:12], **kwargs)
     page.write_text(result, encoding="utf-8")
 
 
