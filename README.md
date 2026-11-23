@@ -1,16 +1,24 @@
-# Nacho Barrios · oliv4s — personal website (v5)
+# Nacho Barrios · oliv4s — personal website (v6)
 
-Minimal English-language portfolio for GitHub Pages: Home with a career journey, detailed CV, and a Markdown blog for public disclosures. No real CVEs or unpublished research are included.
+Source for [oliv4s.github.io](https://oliv4s.github.io/), a static English-language personal website with three pages: Home, CV, and Blog. Version 6 introduces the personalised avatar, a fast-to-scan career timeline and a card-based CV. The intro, "Always learning", and "Notes & research" are retained.
 
-## Publish to GitHub Pages
+## Update the existing GitHub Pages site
 
-1. Use the public GitHub repository `oliv4s/oliv4s.github.io`.
-2. Copy all project source files into the repository root, including `.github/workflows/deploy.yml`. **Do not upload this README by itself.**
-3. Under Settings → Pages, set Source to **GitHub Actions**.
-4. Push to `main`; the existing workflow generates `dist/` and publishes that directory.
-5. Visit `https://oliv4s.github.io/`.
+Use the existing public repository `oliv4s/oliv4s.github.io` — **do not create a new repository**.
 
-For an existing local checkout, replace the existing project files with these and commit/push. The `dist/` folder is generated and ignored by Git.
+1. Extract the ZIP archive. Copy the **contents** into your local repository root, replacing files with the same names. Be sure to include the hidden `.github` folder and `assets/nacho-avatar.webp`.
+2. If your checkout uses Git, from its root run:
+
+   ```sh
+   git add -A
+   git commit -m "Refresh avatar, journey and CV design"
+   git push origin main
+   ```
+
+3. Under repository **Settings → Pages**, keep **Source: GitHub Actions**. The existing `.github/workflows/deploy.yml` builds the static site and publishes `dist/`.
+4. Check **Actions → Publish to GitHub Pages** to see the result, then visit <https://oliv4s.github.io/>. Hard refresh (Ctrl+F5) if the browser displays cached styling.
+
+The `README.md` file is only project documentation, **not** the public home page. Do not change Pages to "Deploy from a branch".
 
 ## Local preview
 
@@ -20,13 +28,14 @@ python build.py
 python -m http.server 8000 --directory dist
 ```
 
-Then open `http://localhost:8000/`.
+Open <http://localhost:8000/>.
 
-## Personalise
+## Edit content
 
-- `site.yml`: journey paragraphs, work experience, certifications, courses, education, skill groups and public profile links.
-- `assets/avatar.svg`: **temporary generic illustration**; replace it later with a personalised portrait (you can use the same SVG file or modify the template reference).
-- `content/posts/`: publish only markdown articles you are authorised to disclose. The included sample is unpublished and ignored.
-- `templates/` and `assets/styles.css`: layout and visual design.
+- `site.yml`: experience, education, certifications, training, skills, journey milestone labels and professional links.
+- `assets/nacho-avatar.webp`: the approved illustration used on the Home page. If you replace it, keep the same path or update `templates/home.html`.
+- `templates/home.html`, `templates/cv.html`, `templates/blog.html`: page layouts.
+- `assets/styles.css`: appearance and mobile styles.
+- `content/posts/`: Markdown blog posts. The included example is **unpublished** (`published: false`); it is not generated as a public web page.
 
-Privacy: the uploaded source CV PDFs, telephone number and personal email are not part of the site. Do not place unreleased vulnerability details, credentials, internal work materials or private files in the public repository.
+**Privacy & disclosure:** Uploaded CV PDFs and the private phone number/email do not appear in this project. Never put unpublished vulnerability details, embargoed writeups, confidential company materials, or credentials in the public repository — the `published: false` flag hides a post from the generated site but does **not** make the source private on GitHub.

@@ -9,19 +9,25 @@
     <div class="hero-cta"><a class="btn primary" href="/cv/">Full CV <span>↗</span></a><a class="btn secondary" href="/blog/">Blog <span>↗</span></a></div>
     <div class="hero-links">{% for s in site.socials %}<a href="{{ s.url }}" rel="noopener noreferrer" target="_blank">{{ s.label }} ↗</a>{% endfor %}</div>
   </div>
-  <div class="hero-visual"><div class="portrait-frame"><img class="hero-avatar" src="/assets/avatar.svg" width="680" height="760" alt="Placeholder illustrated avatar, to be replaced with a personalised portrait"><span class="portrait-label">@oliv4s</span></div></div>
+  <div class="hero-visual"><div class="portrait-frame"><img class="hero-avatar" src="/assets/nacho-avatar.webp" width="1050" height="1040" alt="Illustrated portrait of Nacho Barrios" fetchpriority="high"><span class="portrait-label">@oliv4s</span></div></div>
 </section>
-<section class="narrow-rule container" aria-hidden="true"></section>
-<section class="container section journey-section" id="journey" aria-labelledby="journey-title">
-  <div class="section-heading journey-heading"><div><p class="section-kicker">THE PATH SO FAR</p><h2 id="journey-title">My <em>journey.</em></h2></div><a href="/cv/" class="text-link">Full CV ↗</a></div>
-  <div class="journey-list">
-  {% for item in site.journey %}
-    <article class="journey-item">
-      <div class="journey-when"><span class="journey-dot" aria-hidden="true"></span><span class="journey-date">{{ item.dates }}</span><span class="journey-kind">{{ item.tag }}</span></div>
-      <div class="journey-story"><h3>{{ item.title }}</h3><p>{{ item.description }}</p><span class="journey-place">{{ item.place }}</span></div>
+<div class="narrow-rule container" aria-hidden="true"></div>
+<section class="container section journey-section journey-v6" id="journey" aria-labelledby="journey-title">
+  <div class="section-heading journey-heading"><div><p class="section-kicker">FROM ENGINEERING TO OFFENSIVE SECURITY</p><h2 id="journey-title">My <em>journey.</em></h2></div><a href="/cv/" class="text-link">Full CV ↗</a></div>
+  <div class="journey-track" aria-label="Career timeline from 2012 to today">
+    {% for item in site.journey %}
+    <article class="journey-step">
+      <div class="journey-track-node" aria-hidden="true"><span>{{ '%02d' % loop.index }}</span></div>
+      <div class="journey-step-inner">
+        <span class="journey-step-years">{{ item.short_dates }}</span>
+        <span class="journey-step-phase">{{ item.tag }}</span>
+        <h3>{{ item.short_title }}</h3>
+        <p class="journey-step-place">{{ item.short_place }}</p>
+      </div>
     </article>
-  {% endfor %}
+    {% endfor %}
   </div>
+  <p class="journey-footnote"><span class="journey-footnote-line"></span> A few milestones, with the details in my CV.</p>
 </section>
 <section class="credentials-band" aria-labelledby="credentials-title"><div class="container credentials-layout">
   <div><p class="section-kicker">A FEW CREDENTIALS</p><h2 id="credentials-title">Always <em>learning.</em></h2><p>Selected certifications. The full list and training history are in my CV.</p><a class="text-link" href="/cv/#certifications">All certifications & training ↗</a></div>

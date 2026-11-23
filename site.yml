@@ -1,12 +1,10 @@
-# Public content. Roles, education and credentials from the supplied CVs.
-# No phone, private email or unpublished findings should be stored here.
 name: Nacho Barrios
 handle: oliv4s
 headline: Offensive Security Engineer · Red Team · Vulnerability Research
 site_url: https://oliv4s.github.io
 location: Spain
-intro: I work in offensive security, exploring how systems can fail and what we can learn from them. Red teaming, hands-on
-  research and sharing knowledge are at the heart of what I do.
+intro: I work in offensive security, exploring how systems can fail and what we can learn from them. Red teaming,
+  hands-on research and sharing knowledge are at the heart of what I do.
 skills:
 - group: Offensive assessment
   items:
@@ -40,12 +38,13 @@ experience:
   company: Siemens
   location: Madrid, Spain
   dates: Sep 2022 – Present
-  summary: Red team, purple team and technical offensive-security engagements involving enterprise environments and industrial
-    operational technology.
+  summary: Red team, purple team and technical offensive-security engagements involving enterprise environments
+    and industrial operational technology.
   highlights:
   - Red and purple team assessments for internal and external stakeholders, including M&A contexts.
   - OT security assessments and targeted testing.
   - Research on offensive techniques, red team infrastructure and malware development.
+  mark: S
 - role: Cybersecurity & AI Master’s Instructor
   company: Evolve
   location: Remote / Madrid, Spain
@@ -53,16 +52,18 @@ experience:
   summary: Teaching hands-on cybersecurity modules in the Cybersecurity & AI master’s programme.
   highlights:
   - Practical demonstrations and applied cybersecurity training.
+  mark: E
 - role: Red Team Consultant · Penetration Tester
   company: S2 Grupo
   location: Madrid, Spain
   dates: Jun 2020 – Sep 2022
-  summary: Offensive security assessments and red team engagements across infrastructure, applications and people-focused
-    attack surfaces.
+  summary: Offensive security assessments and red team engagements across infrastructure, applications and
+    people-focused attack surfaces.
   highlights:
   - Red team operations and tooling development; internal and external penetration testing.
   - Web and mobile application assessments and authorized social engineering simulations.
   - Research and training related to offensive security.
+  mark: S2
 - role: Penetration Tester
   company: everis / NTT DATA
   location: Madrid, Spain
@@ -71,12 +72,14 @@ experience:
   highlights:
   - Web, infrastructure, mobile and Wi-Fi security audits.
   - Vulnerability testing and hardening recommendations.
+  mark: N
 - role: Cybersecurity Intern
   company: everis
   location: Madrid, Spain
   dates: Sep 2016 – Aug 2017
   summary: Initial professional experience in information security and penetration testing.
   highlights: []
+  mark: e
 certifications:
 - title: OSCP
   issuer: OffSec · Offensive Security Certified Professional
@@ -133,30 +136,45 @@ journey:
 - dates: 2012–2017
   title: Building an engineering foundation
   place: ETSIT · Universidad Politécnica de Madrid
-  description: I studied Telecommunications Engineering at UPM. That engineering background has shaped the way I approach
-    systems, networks and security ever since.
+  description: I studied Telecommunications Engineering at UPM. That engineering background has shaped the
+    way I approach systems, networks and security ever since.
   tag: EDUCATION
+  short_dates: 2012–17
+  short_title: Engineering roots
+  short_place: ETSIT · UPM
 - dates: 2016–2020
   title: My first steps in cybersecurity
   place: everis · now part of NTT DATA
   description: I started as an intern and later became a penetration tester, working on applications, infrastructure,
     mobile and wireless security.
   tag: FIRST ROLE
+  short_dates: 2016–20
+  short_title: First steps in security
+  short_place: everis / NTT DATA
 - dates: 2020–2022
   title: Moving deeper into offensive security
   place: S2 Grupo
-  description: At S2 Grupo I moved further into red team engagements, offensive tooling and internal and external security
-    assessments.
+  description: At S2 Grupo I moved further into red team engagements, offensive tooling and internal and external
+    security assessments.
   tag: RED TEAM
+  short_dates: 2020–22
+  short_title: Red Team focus
+  short_place: S2 Grupo
 - dates: 2022–Present
   title: Red teaming complex environments
   place: Siemens
-  description: I joined the Siemens Red Team, working on adversary-focused assessments and research across enterprise
-    and operational technology environments.
+  description: I joined the Siemens Red Team, working on adversary-focused assessments and research across
+    enterprise and operational technology environments.
   tag: TODAY
+  short_dates: 2022–NOW
+  short_title: Red Team at Siemens
+  short_place: Siemens
 - dates: 2026–Present
   title: Sharing knowledge and exploring research
   place: Evolve · Personal research
-  description: Alongside my Red Team work, I started teaching hands-on cybersecurity at Evolve and spending more time
-    on vulnerability research. Public writeups will follow responsible disclosure.
+  description: Alongside my Red Team work, I started teaching hands-on cybersecurity at Evolve and spending
+    more time on vulnerability research. Public writeups will follow responsible disclosure.
   tag: ALONGSIDE
+  short_dates: 2026–NOW
+  short_title: Teaching & research
+  short_place: Evolve · Personal projects

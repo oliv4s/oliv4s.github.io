@@ -1,20 +1,53 @@
 {% extends 'base.html' %}
 {% block body %}
-<section class="container subpage-title cv-page-title"><p class="section-kicker">NACHO BARRIOS / OLIV4S</p><h1>Curriculum <em>vitae.</em></h1></section>
-<section class="container cv-layout">
- <aside class="cv-aside"><div class="aside-sticky"><span class="aside-label">NACHO BARRIOS</span><h2>Offensive Security<br>Red Team</h2><span class="small-label">BASED IN {{ site.location|upper }}</span><a href="{{ site.socials[1].url }}" target="_blank" rel="noopener noreferrer" class="aside-link">LinkedIn profile ↗</a><a href="{{ site.socials[2].url }}" target="_blank" rel="noopener noreferrer" class="aside-link">Hack The Box profile ↗</a></div></aside>
- <div class="cv-main">
-  {% if site.experience %}<section class="cv-section"><div class="cv-label">01 / EXPERIENCE</div><h2>Professional experience</h2>
-    {% for job in site.experience %}<article class="cv-entry cv-job"><div><h3>{{ job.role }}</h3><strong>{{ job.company }}</strong>{% if job.location %}<p class="cv-entry-location">{{ job.location }}</p>{% endif %}</div><span>{{ job.dates }}</span>{% if job.summary %}<p>{{ job.summary }}</p>{% endif %}{% if job.highlights %}<ul class="cv-highlights">{% for point in job.highlights %}<li>{{ point }}</li>{% endfor %}</ul>{% endif %}</article>{% endfor %}
-  </section>{% endif %}
-  {% if site.certifications %}<section class="cv-section" id="certifications"><div class="cv-label">02 / CREDENTIALS & TRAINING</div><h2>Certifications & training</h2>
-  <h3 class="cv-subhead">Certifications</h3><div class="cert-grid">{% for cert in site.certifications %}<article class="cert-card"><span class="cert-indicator" aria-hidden="true">✓</span><div class="cert-body"><h3>{{ cert.title }}</h3><p>{{ cert.issuer }}{% if cert.date %} · {{ cert.date }}{% endif %}</p>{% if cert.credential_url %}<a href="{{ cert.credential_url }}" target="_blank" rel="noopener noreferrer" aria-label="Verify {{ cert.title }} credential">Verify credential ↗</a>{% endif %}</div></article>{% endfor %}</div>
-  {% if site.training %}<h3 class="cv-subhead training-title">Courses & labs</h3><div class="training-list">{% for t in site.training %}<div class="training-item"><strong>{{ t.title }}</strong><span>{{ t.provider }}</span></div>{% endfor %}</div>{% endif %}
-  </section>{% endif %}
-  {% if site.education %}<section class="cv-section"><div class="cv-label">03 / EDUCATION</div><h2>Education</h2>{% for ed in site.education %}<article class="cv-entry"><div><h3>{{ ed.title }}</h3><strong>{{ ed.institution }}</strong></div>{% if ed.dates %}<span>{{ ed.dates }}</span>{% endif %}</article>{% endfor %}</section>{% endif %}
-  {% if site.skills %}<section class="cv-section"><div class="cv-label">04 / CAPABILITIES</div><h2>Capabilities & skills</h2>
-  <div class="skills-layout">{% for group in site.skills %}<div class="skill-group"><h3>{{ group.group }}</h3><div class="tag-grid">{% for skill in group['items'] %}<span class="skill-tag">{{ skill }}</span>{% endfor %}</div></div>{% endfor %}</div>
-  </section>{% endif %}
- </div>
+<section class="container cv-hero" aria-labelledby="cv-heading">
+  <div class="cv-hero-top"><p class="section-kicker">NACHO BARRIOS / OLIV4S</p><span class="cv-hero-stamp">CAREER / CREDENTIALS / TOOLKIT</span></div>
+  <div class="cv-hero-inner"><h1 id="cv-heading">Curriculum <em>vitae.</em></h1><span class="cv-hero-mark" aria-hidden="true">↗</span></div>
+  <p class="cv-hero-caption">The work, the learning and the technical foundations behind what I do.</p>
+  <nav class="cv-jumpnav" aria-label="CV sections"><a href="#experience">01 <span>Experience</span> ↓</a><a href="#certifications">02 <span>Certifications & training</span> ↓</a><a href="#education">03 <span>Education</span> ↓</a><a href="#capabilities">04 <span>Capabilities</span> ↓</a></nav>
 </section>
+<div class="container cv-modern">
+  {% if site.experience %}
+  <section class="cv-feature-section" id="experience" aria-labelledby="experience-heading">
+    <div class="cv-section-intro"><span class="section-kicker">01 / THE WORK</span><h2 id="experience-heading">Professional <em>experience.</em></h2><p>Highlights from my roles. Select a card to expand the details.</p></div>
+    <div class="work-grid">
+      {% for job in site.experience %}
+      <article class="work-card {% if loop.first %}work-primary{% endif %}">
+        <div class="work-top"><span class="company-mark" aria-hidden="true">{{ job.mark }}</span><time>{{ job.dates }}</time></div>
+        <div class="work-info"><span class="work-company">{{ job.company }}</span><h3>{{ job.role }}</h3><p>{{ job.summary }}</p></div>
+        {% if job.highlights %}<details class="work-details"><summary><span>Selected work</span><span class="expand-glyph" aria-hidden="true">+</span></summary><ul>{% for point in job.highlights %}<li>{{ point }}</li>{% endfor %}</ul></details>{% else %}<div class="work-details work-details-none"><span>Career starting point</span></div>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+  {% if site.certifications %}
+  <section class="cv-feature-section" id="certifications" aria-labelledby="certifications-heading">
+    <div class="cv-section-intro"><span class="section-kicker">02 / THE PROOF OF PRACTICE</span><h2 id="certifications-heading">Certifications <em>& training.</em></h2><p>Offensive security credentials, specialist courses and practical labs.</p></div>
+    <h3 class="cv-block-head">Certifications <span>{{ site.certifications|length }} credentials</span></h3>
+    <div class="credential-grid-v6">
+      {% for cert in site.certifications %}
+      <article class="credential-card-v6 {% if cert.featured %}credential-featured{% endif %}">
+        <div class="credential-top-v6"><span class="cert-mini-label">CERT / {{ '%02d' % loop.index }}</span><span class="credential-symbol" aria-hidden="true">↗</span></div>
+        <h4>{{ cert.title }}</h4><p class="credential-issuer">{{ cert.issuer }}</p>
+        {% if cert.credential_url %}<a href="{{ cert.credential_url }}" rel="noopener noreferrer" target="_blank">Verify credential ↗</a>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    {% if site.training %}<h3 class="cv-block-head cv-courses-head">Courses & labs <span>Continued learning</span></h3><div class="course-grid-v6">{% for t in site.training %}<div class="course-item-v6"><span class="course-index">{{ '%02d' % loop.index }}</span><div><strong>{{ t.title }}</strong><span>{{ t.provider }}</span></div></div>{% endfor %}</div>{% endif %}
+  </section>
+  {% endif %}
+  {% if site.education %}
+  <section class="cv-feature-section" id="education" aria-labelledby="education-heading">
+    <div class="cv-section-intro"><span class="section-kicker">03 / FOUNDATIONS</span><h2 id="education-heading">Education.</h2></div>
+    {% for ed in site.education %}<div class="education-panel"><div class="education-bigword" aria-hidden="true">UPM<span>.</span></div><div class="education-panel-copy"><span class="education-period">{{ ed.dates }}</span><h3>{{ ed.title }}</h3><p>{{ ed.institution }}</p></div><div class="education-decor" aria-hidden="true">↗</div></div>{% endfor %}
+  </section>
+  {% endif %}
+  {% if site.skills %}
+  <section class="cv-feature-section cv-feature-last" id="capabilities" aria-labelledby="capabilities-heading">
+    <div class="cv-section-intro"><span class="section-kicker">04 / THE TOOLKIT</span><h2 id="capabilities-heading">Capabilities <em>& skills.</em></h2><p>A snapshot of the areas I work in, rather than an exhaustive tool list.</p></div>
+    <div class="capability-grid-v6">{% for group in site.skills %}<article class="capability-card-v6"><span class="capability-index">0{{ loop.index }} <span aria-hidden="true">/</span></span><h3>{{ group.group }}</h3><div class="capability-skills">{% for skill in group['items'] %}<span>{{ skill }}</span>{% endfor %}</div></article>{% endfor %}</div>
+  </section>
+  {% endif %}
+</div>
 {% endblock %}
